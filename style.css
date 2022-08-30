@@ -351,13 +351,13 @@ footer {
         width: 100%;
     }
 
-    .hero-wrapper {
+    .cover-wrapper {
         display: flex;
         justify-content: space-between;
         gap: 50px;
     }
 
-    .hero-image-area img {
+    .cover-image-area img {
         width: 300px;
         margin-bottom: -96px;
         padding: 58px 17px 50px 76px;
@@ -375,7 +375,7 @@ footer {
         width: 100%;
     }
 
-    .hero-wrapper {
+    .cover-wrapper {
         display: flex;
         justify-content: space-between;
         gap: 30px;
@@ -383,18 +383,18 @@ footer {
         padding: 58px 17px 50px 76px;
     }
 
-    .hero-text-area h1 {
+    .cover-text-area h1 {
         font-size: 40px;
         line-height: 50px;
         margin-bottom: 10px;
     }
 
-    .hero-text-area p {
+    .cover-text-area p {
         padding-right: 0px;
         margin-bottom: 46px;
     }
 
-    .hero-image-area img {
+    .cover-image-area img {
         margin-bottom: -96px;
     }
 
@@ -483,7 +483,7 @@ footer {
         width: 100%;
     }
 
-    .hero-wrapper {
+    .cover-wrapper {
         display: flex;
         flex-direction: column;
         gap: 37px;
@@ -492,13 +492,13 @@ footer {
         margin: 30px 15px 24px;
     }
 
-    .hero-text-area h1 {
+    .cover-text-area h1 {
         font-size: 22px;
         line-height: 33px;
         margin-bottom: 8px;
     }
 
-    .hero-text-area p {
+    .cover-text-area p {
         padding-right: 0px;
         margin-bottom: 24px;
     }
@@ -507,7 +507,7 @@ footer {
         padding: 8px 12px;
     }
 
-    .hero-image-area img {
+    .cover-image-area img {
         margin-bottom: -7px;
     }
 
