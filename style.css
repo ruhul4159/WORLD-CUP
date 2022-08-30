@@ -1,0 +1,600 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway&display=swap');
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* ==================================
+    Hero Section Style
+=====================================*/
+.cover-wrapper {
+    display: grid;
+    grid-template-columns: 531px 581px;
+    gap: 24px;
+    align-items: center;
+    background: #180505;
+    border-radius: 30px;
+    margin: 50px 0px 130px;
+    padding: 33px 79px 0px 106px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-text-area {
+    color: #fff;
+}
+
+.cover-text-area h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.cover-text-area p {
+    line-height: 26px;
+    padding-right: 42px;
+    margin-bottom: 46px;
+}
+
+.watch-live-btn {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding: 16px 25px;
+    background-color: #a17d05;
+    border-radius: 5px;
+}
+
+.watch-live-btn .fa-chevron-right {
+    margin-left: 10px;
+}
+
+.cover-image-area img {
+    margin-bottom: -5px;
+}
+
+/* Animation */
+.bubble {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: -70px;
+}
+
+.bubble img {
+    width: 50px;
+    animation: bubble 5s linear infinite;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-60vh);
+        opacity: 0;
+    }
+}
+
+.bubble img:nth-child(1) {
+    animation-delay: 2s;
+    width: 20px;
+}
+
+.bubble img:nth-child(2) {
+    animation-delay: 1s;
+    width: 30px;
+}
+
+.bubble img:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.bubble img:nth-child(4) {
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.bubble img:nth-child(5) {
+    animation-delay: 5s;
+    width: 45px;
+}
+
+.bubble img:nth-child(6) {
+    animation-delay: 6s;
+    width: 30px;
+}
+
+.bubble img:nth-child(7) {
+    width: 35px;
+    animation-delay: 4.5s;
+}
+
+/* ==================================
+    Blog Section Style      
+=====================================*/
+.blog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 130px;
+}
+
+.side-nav {
+    flex: 25%;
+    position: relative;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-right: 24px;
+    padding: 30px 30px 1px;
+    position: sticky;
+    top: 30px;
+}
+
+.side-nav ul li {
+    margin-bottom: 30px;
+}
+
+.side-nav ul li a {
+    display: block;
+    padding: 17px 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    color: #161616;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition: .3s;
+}
+
+.side-nav ul li a:hover {
+    background-color: #824AD8;
+    color: #fff;
+}
+
+.blog-area,
+.um-area {
+    flex: 75%;
+}
+
+.blog-wrap,
+.um-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blog-wrap article {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.details {
+    padding: 24px 20px 20px;
+}
+
+.details a {
+    border: 1px solid #161616;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #161616;
+    padding: 4px 16px 0px 17px;
+    transition: .3s;
+}
+
+.details a:hover {
+    border: 1px solid #824AD8;
+    background-color: #824AD8;
+    color: #fff;
+}
+
+.details h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+    margin: 19px 0px 20px;
+}
+
+.blog-info {
+    display: flex;
+    gap: 30px;
+}
+
+.hours span,
+.comments span {
+    line-height: 26px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.hours span i,
+.comments span i {
+    color: rgb(153 153 153 / 80%);
+    margin-right: 5px;
+}
+
+.view-all {
+    display: none;
+}
+
+/* ==================================
+    Footer Section Style      
+=====================================*/
+footer {
+    background-color: #161616;
+    padding: 130px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-wrap h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 50px;
+}
+
+.footer-menu {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 50px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.footer-menu ul li a {
+    color: #B9B9B9;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.social-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    background-color: #22213C;
+    list-style-type: none;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.social-links li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* ==================================
+    Upcoming Match Page Style Here      
+=====================================*/
+.um-thumbnail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.um-thumbnail img {
+    width: 93px;
+}
+
+.um-thumbnail h3 {
+    color: #161616;
+    line-height: 24px;
+}
+
+.um-wrap article {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 53px 30px 52px;
+    text-align: center;
+}
+
+.um-details h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+    margin-bottom: 10px;
+}
+
+/* ==================================
+    Responsive Style Here       
+=====================================*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .hero-image-area img {
+        width: 300px;
+        margin-bottom: -96px;
+        padding: 58px 17px 50px 76px;
+    }
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 50px 15px 70px;
+        padding: 58px 17px 50px 76px;
+    }
+
+    .hero-text-area h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .hero-text-area p {
+        padding-right: 0px;
+        margin-bottom: 46px;
+    }
+
+    .hero-image-area img {
+        margin-bottom: -96px;
+    }
+
+    .bubble img:nth-child(3) {
+        width: 30px;
+    }
+
+    .bubble img:nth-child(5) {
+        width: 40px;
+    }
+
+    /* Blog Area */
+    .blog-wrapper {
+        flex-direction: column;
+        padding-bottom: 85px;
+    }
+
+    .side-nav,
+    .blog-area,
+    .um-area {
+        padding: 0px 15px;
+    }
+
+    .side-nav ul {
+        list-style-type: none;
+        background-color: transparent;
+        border-radius: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+
+    .side-nav ul li {
+        margin
+    }
+
+    .side-nav ul li a {
+        border: 1px solid #E8E8E8;
+    }
+
+    .blog-wrap,
+    .um-wrap {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .view-all {
+        display: block;
+        margin-top: 66px;
+        text-align: center;
+    }
+
+    /* Footer Area */
+    footer {
+        padding: 70px;
+    }
+
+    .footer-wrap h1 {
+        margin-bottom: 30px;
+    }
+
+    .footer-menu {
+        padding-top: 30px;
+    }
+
+    .footer-menu ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        margin-top: 30px;
+    }
+}
+
+/* Mobile Device */
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        text-align: center;
+        padding: 28px 38px 0px;
+        margin: 30px 15px 24px;
+    }
+
+    .hero-text-area h1 {
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 8px;
+    }
+
+    .hero-text-area p {
+        padding-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    .watch-live-btn {
+        padding: 8px 12px;
+    }
+
+    .hero-image-area img {
+        margin-bottom: -7px;
+    }
+
+    .bubble img:nth-child(3) {
+        width: 30px;
+    }
+
+    .bubble img:nth-child(5) {
+        width: 35px;
+    }
+
+    /* Blog Area */
+    .blog-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    .side-nav,
+    .blog-area,
+    .um-area {
+        padding: 0px 15px;
+    }
+
+    .side-nav {
+        margin-bottom: 8px;
+    }
+
+    .side-nav ul {
+        display: inline-block;
+        list-style-type: none;
+        background-color: transparent;
+        border-radius: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    .side-nav ul li {
+        margin-bottom: 16px;
+    }
+
+    .side-nav ul li a {
+        border: 1px solid #E8E8E8;
+    }
+
+    .blog-wrap,
+    .um-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .um-thumbnail img {
+        width: 75px;
+    }
+
+    .view-all {
+        display: none;
+    }
+
+    /* Footer Area */
+    footer {
+        padding: 24px;
+    }
+
+    .footer-wrap h1 {
+        margin-bottom: 24px;
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .footer-menu {
+        padding-top: 24px;
+    }
+
+    .footer-menu ul li {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
