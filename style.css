@@ -13,7 +13,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #4D4D4D;
+    color: #f4efef;
 }
 
 a {
@@ -29,15 +29,13 @@ img {
     margin: 0 auto;
 }
 
-/* ==================================
-    Hero Section Style
-=====================================*/
+/* Hero Section Style*/
 .cover-wrapper {
     display: grid;
     grid-template-columns: 531px 581px;
     gap: 24px;
     align-items: center;
-    background: #180505;
+    background: #141110;
     border-radius: 30px;
     margin: 50px 0px 130px;
     padding: 33px 79px 0px 106px;
@@ -147,9 +145,7 @@ img {
     animation-delay: 4.5s;
 }
 
-/* ==================================
-    Blog Section Style      
-=====================================*/
+/* Blog Section Style */
 .blog-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +159,7 @@ img {
 
 .side-nav ul {
     list-style-type: none;
-    background-color: #161616;
+    background-color: #1e1b01;
     border-radius: 10px;
     margin-right: 24px;
     padding: 30px 30px 1px;
@@ -189,7 +185,7 @@ img {
 }
 
 .side-nav ul li a:hover {
-    background-color: #824AD8;
+    background-color: #e8d22d;
     color: #fff;
 }
 
@@ -259,9 +255,7 @@ img {
     display: none;
 }
 
-/* ==================================
-    Footer Section Style      
-=====================================*/
+/* Footer Section Style*/
 footer {
     background-color: #161616;
     padding: 130px;
@@ -319,9 +313,7 @@ footer {
     font-size: 14px;
 }
 
-/* ==================================
-    Upcoming Match Page Style Here      
-=====================================*/
+/* Upcoming Match Page Style Here*/
 .um-thumbnail {
     display: flex;
     justify-content: space-between;
@@ -353,9 +345,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* ==================================
-    Responsive Style Here       
-=====================================*/
+/* Responsive Style Here */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .container {
         width: 100%;
